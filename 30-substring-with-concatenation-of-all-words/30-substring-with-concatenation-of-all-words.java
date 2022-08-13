@@ -25,7 +25,7 @@ class Solution {
                 // System.out.println(i);
                 int t = copy.get(str);
                 if(--t==0) {
-                    System.out.println("removed "+ str);
+                    // System.out.println("removed "+ str);
                     copy.remove(str);
                 }
                 
