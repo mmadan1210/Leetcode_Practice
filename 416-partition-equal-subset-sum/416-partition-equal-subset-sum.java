@@ -1,21 +1,4 @@
 class Solution {
-//     public int f(int ind, int arr[], int sum, int dp[][]){
-//         if(sum==0){
-//             return 1;
-//         }
-//         if(ind==0){
-//             if(arr[ind]==sum){
-//                 return 1;
-//             }
-//             return 0;
-//         }
-//         if(dp[ind][sum]!=-1) return dp[ind][sum];
-//         int not_take = f(ind-1,arr,sum,dp);
-//         int take = 0;
-//         if(arr[ind]<=sum) take = f(ind-1,arr,sum-arr[ind],dp);
-//         return dp[ind][sum] = not_take | take;
-        
-//     }
     public int f(int ind, int arr[], int sum, int dp[][]){
         if(sum==0) return 1;
         if(ind==0){
