@@ -44,7 +44,7 @@ class Solution {
         ListNode r = rev(m);
         ListNode left = head;
         ListNode right = r;
-        while(true && left!=null && right!=null){
+        while(left!=null && right!=null){
             if(left.val!=right.val) return false;
             left = left.next;
             right = right.next;
