@@ -9,15 +9,15 @@
  * }
  */
 class Solution {
-    public int size(ListNode head){
-        ListNode temp = head;
-        int count = 0;
-        while(temp.next!=null){
-            count++;
-            temp = temp.next;
-        }
-        return count;
-    }
+    // public int size(ListNode head){
+    //     ListNode temp = head;
+    //     int count = 0;
+    //     while(temp.next!=null){
+    //         count++;
+    //         temp = temp.next;
+    //     }
+    //     return count;
+    // }
     public ListNode mid(ListNode head){
         if(head==null) return null;
         ListNode slow = head;
@@ -39,7 +39,7 @@ class Solution {
 		return prev;
     }
     public boolean isPalindrome(ListNode head) {
-        int s = size(head);
+        // int s = size(head);
         ListNode m = mid(head);
         ListNode r = rev(m);
         ListNode left = head;
